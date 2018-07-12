@@ -2,7 +2,8 @@
   "name": "funts",
   "version": "1.0.0",
   "description": "Functional library for typescript",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": "redforks@gmail.com",
   "license": "MIT",
   "dependencies": {},
@@ -10,5 +11,8 @@
     "mytslint": "^1.0.0",
     "tslint": "^5.10.0",
     "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "build": "tsc"
   }
 }
