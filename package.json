@@ -1,0 +1,14 @@
+{
+  "name": "funts",
+  "version": "1.0.0",
+  "description": "Functional library for typescript",
+  "main": "index.js",
+  "author": "redforks@gmail.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "mytslint": "^1.0.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  }
+}
