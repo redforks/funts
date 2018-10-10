@@ -6,3 +6,7 @@ export declare type DeepPartial<T> = {
  * Alias of Extract<keyof T, string>.
  */
 export declare type StringKeys<T> = Extract<keyof T, string>;
+/**
+ * Two items tuple has the same type.
+ */
+export declare type Twin<T> = [T, T];

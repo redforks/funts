@@ -8,3 +8,8 @@ export type DeepPartial<T> = {
  * Alias of Extract<keyof T, string>.
  */
 export type StringKeys<T> = Extract<keyof T, string>;
+
+/**
+ * Two items tuple has the same type.
+ */
+export type Twin<T> = [T, T];
