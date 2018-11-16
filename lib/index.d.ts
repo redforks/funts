@@ -20,3 +20,9 @@ export declare type AsyncOrSync<T> = T | Promise<T>;
 export declare type Mutable<T> = {
     -readonly [P in keyof T]: T[P];
 };
+/**
+ * Turn to nullable type.
+ *
+ * Note: allow undefined value, if want only null nad value, use T | null directly.
+ */
+export declare type Nullable<T> = T | null | undefined;
