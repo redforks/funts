@@ -10,3 +10,7 @@ export declare type StringKeys<T> = Extract<keyof T, string>;
  * Two items tuple has the same type.
  */
 export declare type Twin<T> = [T, T];
+/**
+ * Sync or Async type of T
+ */
+export declare type AsyncOrSync<T> = T | Promise<T>;
