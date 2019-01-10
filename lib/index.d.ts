@@ -14,3 +14,9 @@ export declare type Twin<T> = [T, T];
  * Sync or Async type of T
  */
 export declare type AsyncOrSync<T> = T | Promise<T>;
+/**
+ * Remove readonly flags from all fields, make it mutable.
+ */
+export declare type Mutable<T> = {
+    -readonly [P in keyof T]: T[P];
+};
