@@ -26,3 +26,9 @@ export declare type Mutable<T> = {
  * Note: allow undefined value, if want only null nad value, use T | null directly.
  */
 export declare type Nullable<T> = T | null | undefined;
+/**
+ * Each field of type T allows to be null.
+ */
+export declare type Nullish<T> = {
+    [P in keyof T]: T[P] | null;
+};

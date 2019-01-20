@@ -32,3 +32,10 @@ export type Mutable<T> = {
  * Note: allow undefined value, if want only null nad value, use T | null directly.
  */
 export type Nullable<T> = T | null | undefined;
+
+/**
+ * Each field of type T allows to be null.
+ */
+export type Nullish<T> = {
+  [P in keyof T]: T[P] | null;
+};
