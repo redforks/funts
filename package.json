@@ -16,7 +16,9 @@
     "typescript": "^3.2.4"
   },
   "scripts": {
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "tsc",
+    "lint": "tsc --noEmit -p . && tslint --project . ",
+    "test": "jest"
   },
   "jest": {
     "transform": {
