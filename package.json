@@ -1,6 +1,6 @@
 {
   "name": "funts",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Functional library for typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,12 +8,12 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^23.1.5",
-    "jest": "^23.4.0",
-    "mytslint": "^1.0.7",
-    "ts-jest": "^23.0.0",
-    "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
+    "@types/jest": "^24.0.6",
+    "jest": "^24.1.0",
+    "mytslint": "^1.4.0",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
   },
   "scripts": {
     "prepublishOnly": "tsc"
