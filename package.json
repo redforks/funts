@@ -1,14 +1,18 @@
 {
   "name": "funts",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "description": "Functional library for typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "redforks@gmail.com",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "ramda": "^0.26.0"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.6",
+    "@types/node": "^11.9.5",
+    "@types/ramda": "^0.25.50",
     "jest": "^24.1.0",
     "mytslint": "^1.4.0",
     "ts-jest": "^24.0.0",

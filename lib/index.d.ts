@@ -32,3 +32,8 @@ export declare type Nullable<T> = T | null | undefined;
 export declare type Nullish<T> = {
     [P in keyof T]: T[P] | null;
 };
+export declare function dump<T>(v: T): T;
+/**
+ * Create an object with specified keys, with the same value.
+ */
+export declare function toKeyedObject<T>(v: T, keys: string[]): Record<string, T>;

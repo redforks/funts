@@ -1,4 +1,4 @@
-import { DeepPartial } from './index';
+import { DeepPartial, toKeyedObject } from './index';
 
 interface Foo {
   NumProp: number;
@@ -17,4 +17,9 @@ test('DeepPartial', () => {
   foo.SubItemArray = [{
     SubItemArray: [],
   }];
+});
+
+it('toKeyedObject', () => {
+  expect(toKeyedObject(1, [])).toStrictEqual({});
+  expect(toKeyedObject({}, ['a', 'b'])).toStrictEqual({ a: {}, b: {} });
 });
